@@ -1,5 +1,5 @@
-const toMainPage = document.getElementById('toMainPage')
+// const toMainPage = document.getElementById('toMainPage')
 
-toMainPage.addEventListener('click', () => {
-	location.pathname = '/index.html'
-})
+// toMainPage.addEventListener('click', () => {
+// 	location.pathname = '/index.html'
+// })
