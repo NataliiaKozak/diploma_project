@@ -5,10 +5,121 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Main page</title>
 		<link rel="stylesheet" href="./styles/style.css" />
-		<script defer src="./scripts/index.js"></script>
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
 	</head>
+
 	<body>
-		<h1>Main page</h1>
-		<button id="toSecondPage">Join Meetup</button>
+		<!-- обвертка -->
+				<div class="wrapper"> 
+					<header>
+						
+							<!-- контейнер для ограничения ширины --> 
+				<div class="header__container">
+						<div class="header__left">
+								<a class="logo" href="">
+												<img src="./assets/img/svg/logo_Mettup.svg" alt="logo" />
+									</a>
+					
+						<div class="header__search"> 
+								<form action="#">
+										<input class="search-events" type="text" placeholder="Search events">
+             				<input class="search-location" type="text" placeholder="Mountain View, CA">
+              			<input class="search-button" type="button">
+								</form>
+							</div>
+						</div>
+									
+			<div class="header__right">
+						<div class="select-language">
+            				<label for="language"></label>
+           					<select id="language">
+              					<option value="en">English</option>
+              					<option value="de">Deutsch</option>
+            				</select>
+          		</div>
+          	
+									<div class="auth-form">
+<input class="button-log-in" type="submit" value="Log In"></input>
+<button class="button-sign-up" type="submit">Sign Up</button>
+</div>
+</div>
+</div>
+</header>
+
+<main class="page">
+		<section class="first__container">
+          <div class="content">
+              <h1>The people platform—Where interests become friendships</h1>
+              <p>Whatever your interest, from hiking and reading to networking and skill sharing,
+                  there are thousands of people who share it on Meetup. Events are happening
+                  every day—sign up to join the fun.</p>
+									<button id="toEventsNewYork" class="button__Join">Join Meetup</button>
+          </div>
+          <div class="logo-event">
+              <img src="/assets/img/png/block1_people.png" alt="events">
+          </div>
+		</section>
+
+<!-- events Near-->
+			<section class="first-grid-container">
+				<div class="events-near-title">
+<h2>Events near</h2>
+<div>
+	<input class="search-location" type="text" placeholder="Mountain View, CA">
+	<img src="/assets/img/svg/pen.svg">
+</div>
+
+<div class="grid-container__wrapper">
+<!-- 1 карточка в 1 гриде -->
+<div class="grid-card">
+<div class="grid-item__img">
+<img src="/assets/img/png/img-grid1.png" alt="event" />
+</div>
+              
+<div class="grid-item__content">
+<div class="event__title">
+<h3>Day Trading Idea and Strategy</h3>
+<div class="event__info">
+<p class="event__location">Business (5 km)</p>
+</div>
+</div>
+<div class="event-info2">
+<span class="event-icon">
+<img src="/assets/img/svg/date.svg"/>
+</span>
+<p class="event-time">Mon, Mar 18 · 7:00 PM PDT</p>         
+</div>
+<div class="going">
+<img src="/assets/img/svg/tick.svg" class="going-check" alt="check"/>
+<p class="text-info"> 1 going</p>
+<img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
+<p class="text-info">Free</p>
+</div>
+</div> 
+          
+</div>
+</div>
+			
+</section>
+
+
+
+
+</main>
+
+<footer>
+	
+</footer>
+			
+
+
+
+
+
+
+		</div>
+				<script src="./scripts/index.js"></script>
 	</body>
 </html>
