@@ -8,62 +8,72 @@
 		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
-	</head>
+</head>
 
 <body>
-<div class="wrapper">
-<header class="navbar">
-	<nav class="nav-left">
-			<a href="#">
-				<img class='logo' src="./assets/img/svg/logo_Mettup.svg" alt="logo">
-			</a>
-			<form class="header__form" action="#">
-				<!-- нужен ли этот див search-evens -->
-				<div class="header-search-evens">
-					<img class="nav-loop" src="./assets/img/svg/loop.svg" alt="#">
-					<input class="nav-input-left" type="text" placeholder="Search events">
-					<input class="nav-input-right" type="text" placeholder="Mountain View, CA">
-					<button class="nav-left-btn"><img class="nav-loop" src="./assets/img/svg/loop.svg" alt="#"></button>
+	<div class="wrapper">
+		<header class="header">
+			
+			<!-- нав.меню -->
+			<nav class="navbar">
+				<div class="nav-left">
+					<a href="#">
+						<img class='link-logo' src="./assets/img/svg/logo_Mettup.svg" alt="logo">
+					</a>
+					<form class="nav__form" action="#">
+						<div class="nav-search-wrapper">
+
+							<!-- объединить лупу и инпут -->
+							<div class="loop-input-container">
+								<div class="loop-container">
+									<img src="./assets/img/svg/loop.svg" alt="#">
+								</div>
+								<input class="input-left" type="text" placeholder="Search events">
+							</div>
+							<!-- <img class="nav-loop"  -->
+							<div class="input-button-container">
+								<input class="input-right" type="text" value="Mountain View, CA">
+								<button class="search-button">
+									<img src="./assets/img/svg/loop.svg" alt="Поиск">
+								</button>
+							</div>
+						</div>
+					</form>
 				</div>
-			</form>
-	</nav>
 
-<!-- правая часть -->
-	<div class="nav-right">
-		<div class="select-language">
-			<label for="language"></label>
-            <select id="language">
+				<!-- правая часть нав.меню -->
+				<div class="nav-right">
+					<div class="select-language">
+						<label for="language"></label>
+						<select id="language">
 							<option value="en">English</option>
-              <option value="de">Deutsch</option>
-            </select>
-		</div>
-		<div class="auth-form">
-		<input class="btn-log-in" type="submit" value="Log In"></input>
-    </div>
-		<div class="nav-right-button">
-			<button class="btn-sign-up" type="submit">Sign Up</button>
-		</div>
+							<option value="de">Deutsch</option>
+						</select>
+					</div>
+					<div class="auth-form">
+						<input class="btn-log-in" type="submit" value="Log In">
+					</input>
+				</div>
+				<div class="nav-right-button">
+					<button class="btn-sign-up" type="submit">Sign Up</button>
+				</div>
+			</div>
+		</nav>
+		<!-- картинка с кнопкой для перехода на другую страницу -->
+		</header>
+
+		<main class="main">
+			<section class="first__container"></section>
+			<section class="events-near__container"></section>
+			<section class="online-events__container"></section>
+			<section class="sign-up__container"></section>
+			<section class="categories__container"></section>
+			<section class="link-cities__container"></section>
+			<section class="how-works__container"></section>
+			<section class="friendships__container"></section>
+		</main>
+		<footer class="footer"></footer>
 	</div>
-</header>
-
-<main class="main"> 
-<section class="first__container"></section>
-
-<section class="events-near__container"></section>
-
-<section class="online-events__container"></section>
-
-<section class="sign-up__container"></section>
-<section class="categories__container"></section>
-<section class="link-cities__container"></section>
-<section class="how-works__container"></section>
-<section class="friendships__container"></section>
-</main>
-
-<footer class="footer">
-</footer>
-</div>
-
-				<script src="./scripts/index.js"></script>
-  </body>
+	<script src="./scripts/index.js"></script>
+</body>
 </html>
