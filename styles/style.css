@@ -6,14 +6,112 @@
 	display: flex;
 	flex-direction: column;
 	overflow: clip;
+	width: 1512px;
+	margin: auto;
+	border: 1px solid rgb(236, 15, 15);
 }
 
 .wrapper > main {
 	flex: 1;
 }
 
+/* ширина секций => названии секций */
 [class*='__container'] {
-	max-width: 1276px;
+	max-width: 1196px;
 	padding-inline: 40px;
 	margin: 0 auto;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	/* position: relative; */
+	/* по отношению к нему два дива внутри будут позишен абсолют */
+	max-width: 1512px;
+	width: 100%;
+	height: 64px;
+}
+
+main {
+	max-width: 1196px;
+	padding-inline: 40px;
+	margin: 0 auto;
+}
+
+footer {
+	/* position: relative; */
+	/* по отношению к нему 1 div  позишен абсолют */
+	max-width: 1512px;
+	width: 100%;
+	height: 560px;
+}
+
+/* HEADER левая часть */
+.nav-left {
+	max-width: 100%;
+	width: 750px;
+	display: flex;
+}
+
+/* править логотип */
+.logo {
+}
+
+/* форма с 2 инпутом и кнопки */
+.header__form {
+	width: 590px;
+	display: flex;
+	justify-content: space-between;
+}
+/* див в форме */
+.header-search-evens {
+	width: 590px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-loop {
+}
+.nav-input-left {
+}
+
+.nav-input-right {
+}
+.nav-left-btn {
+	width: 42px;
+	height: 42px;
+	border-radius: 0px 8px 8px 0px;
+	border: none;
+	background-color: rgba(246, 88, 88, 1);
+}
+
+/* header правая часть */
+.nav-right {
+}
+.select-language {
+}
+.auth-form {
+}
+.btn-log-in {
+}
+.nav-right-button {
+}
+.btn-sign-up {
+}
+
+/* main */
+/* section 1 */
+
+@media (max-width: 390px) {
+	.wrapper {
+		width: 100%;
+	}
+	[class*='__container'] {
+		max-width: 364px;
+		padding-inline: 20px;
+		margin: 0 auto;
+	}
+	footer {
+		max-width: 100%;
+	}
 }

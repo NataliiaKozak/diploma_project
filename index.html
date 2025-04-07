@@ -10,116 +10,60 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
 	</head>
 
-	<body>
-		<!-- обвертка -->
-				<div class="wrapper"> 
-					<header>
-						
-							<!-- контейнер для ограничения ширины --> 
-				<div class="header__container">
-						<div class="header__left">
-								<a class="logo" href="">
-												<img src="./assets/img/svg/logo_Mettup.svg" alt="logo" />
-									</a>
-					
-						<div class="header__search"> 
-								<form action="#">
-										<input class="search-events" type="text" placeholder="Search events">
-             				<input class="search-location" type="text" placeholder="Mountain View, CA">
-              			<input class="search-button" type="button">
-								</form>
-							</div>
-						</div>
-									
-			<div class="header__right">
-						<div class="select-language">
-            				<label for="language"></label>
-           					<select id="language">
-              					<option value="en">English</option>
-              					<option value="de">Deutsch</option>
-            				</select>
-          		</div>
-          	
-									<div class="auth-form">
-<input class="button-log-in" type="submit" value="Log In"></input>
-<button class="button-sign-up" type="submit">Sign Up</button>
-</div>
-</div>
-</div>
+<body>
+<div class="wrapper">
+<header class="navbar">
+	<nav class="nav-left">
+			<a href="#">
+				<img class='logo' src="./assets/img/svg/logo_Mettup.svg" alt="logo">
+			</a>
+			<form class="header__form" action="#">
+				<!-- нужен ли этот див search-evens -->
+				<div class="header-search-evens">
+					<img class="nav-loop" src="./assets/img/svg/loop.svg" alt="#">
+					<input class="nav-input-left" type="text" placeholder="Search events">
+					<input class="nav-input-right" type="text" placeholder="Mountain View, CA">
+					<button class="nav-left-btn"><img class="nav-loop" src="./assets/img/svg/loop.svg" alt="#"></button>
+				</div>
+			</form>
+	</nav>
+
+<!-- правая часть -->
+	<div class="nav-right">
+		<div class="select-language">
+			<label for="language"></label>
+            <select id="language">
+							<option value="en">English</option>
+              <option value="de">Deutsch</option>
+            </select>
+		</div>
+		<div class="auth-form">
+		<input class="btn-log-in" type="submit" value="Log In"></input>
+    </div>
+		<div class="nav-right-button">
+			<button class="btn-sign-up" type="submit">Sign Up</button>
+		</div>
+	</div>
 </header>
 
-<main class="page">
-		<section class="first__container">
-          <div class="content">
-              <h1>The people platform—Where interests become friendships</h1>
-              <p>Whatever your interest, from hiking and reading to networking and skill sharing,
-                  there are thousands of people who share it on Meetup. Events are happening
-                  every day—sign up to join the fun.</p>
-									<button id="toEventsNewYork" class="button__Join">Join Meetup</button>
-          </div>
-          <div class="logo-event">
-              <img src="/assets/img/png/block1_people.png" alt="events">
-          </div>
-		</section>
+<main class="main"> 
+<section class="first__container"></section>
 
-<!-- events Near-->
-			<section class="first-grid-container">
-				<div class="events-near-title">
-<h2>Events near</h2>
-<div>
-	<input class="search-location" type="text" placeholder="Mountain View, CA">
-	<img src="/assets/img/svg/pen.svg">
-</div>
+<section class="events-near__container"></section>
 
-<div class="grid-container__wrapper">
-<!-- 1 карточка в 1 гриде -->
-<div class="grid-card">
-<div class="grid-item__img">
-<img src="/assets/img/png/img-grid1.png" alt="event" />
-</div>
-              
-<div class="grid-item__content">
-<div class="event__title">
-<h3>Day Trading Idea and Strategy</h3>
-<div class="event__info">
-<p class="event__location">Business (5 km)</p>
-</div>
-</div>
-<div class="event-info2">
-<span class="event-icon">
-<img src="/assets/img/svg/date.svg"/>
-</span>
-<p class="event-time">Mon, Mar 18 · 7:00 PM PDT</p>         
-</div>
-<div class="going">
-<img src="/assets/img/svg/tick.svg" class="going-check" alt="check"/>
-<p class="text-info"> 1 going</p>
-<img src="/assets/img/svg/ticket.svg" class="ticket" alt="ticket"/>
-<p class="text-info">Free</p>
-</div>
-</div> 
-          
-</div>
-</div>
-			
-</section>
+<section class="online-events__container"></section>
 
-
-
-
+<section class="sign-up__container"></section>
+<section class="categories__container"></section>
+<section class="link-cities__container"></section>
+<section class="how-works__container"></section>
+<section class="friendships__container"></section>
 </main>
 
-<footer>
-	
+<footer class="footer">
 </footer>
-			
+</div>
 
-
-
-
-
-
-		</div>
 				<script src="./scripts/index.js"></script>
-	</body>
+  </body>
 </html>
