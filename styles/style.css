@@ -63,7 +63,7 @@ header {
 
 /* форма с 2 инпутом и кнопка */
 .nav__form {
-	visibility: hidden;
+	/* visibility: hidden; */
 	max-width: 592px;
 	width: 100%;
 	max-height: 42px;
@@ -187,324 +187,660 @@ main {
 	max-width: 1196px;
 	width: 100%;
 	/* padding-inline: 40px; */
-/* max-height: 3827px;
+	/* max-height: 3827px;
 height: 100%; */
 	margin: 0 auto;
 	border: 1px solid black;
-/* убрать границу */
+	/* убрать границу */
 	/* padding: 15px 0px; */
 }
 
+/* DIV with button Join Meetup */
 .join__container {
 	max-width: 1196px;
 	width: 100%;
 	margin-top: 90px;
-  display: flex;
-  justify-content: start;
+	display: flex;
+	justify-content: start;
 	gap: 54px;
-	min-height: 461px; 
+	min-height: 461px;
 	/* убрать границы */
 	border: 1px solid rgb(38, 12, 228);
 }
 
 .join__content {
-max-width: 600px;
-
+	max-width: 600px;
 }
 
 .join__title {
-	 font-size: 42px;
-    font-weight: 700;
-    line-height: 52px;
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 52px;
 }
 .join__description {
 	margin-top: 25px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
 }
 .join__button {
 	margin-top: 24px;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 8px;
-    background-color: rgb(0, 121, 138);
-    font-size: 16px;
-    font-weight: 400;
+	color: #fff;
+	padding: 8px 16px;
+	border-radius: 8px;
+	background-color: rgb(0, 121, 138);
+	font-size: 16px;
+	font-weight: 400;
 }
 .join__foto {
-  height: 461px; 
+	height: 461px;
 	border: 1px solid rgb(204, 64, 214);
-
 }
 .image {
 	max-width: 379px;
-  max-height: 269px;
+	max-height: 269px;
 	top: 96px;
 }
 
-/* SECTION 1 EVENTS__CONTAINER */
+/* SECTION 1 Events near Mountain View, CA */
 .events__container {
-    margin-top: 126px;
-		border: 1ps solid rgb(70, 93, 95);
+	margin-top: 126px;
+	border: 1ps solid rgb(70, 93, 95);
 }
 .events-list__header {
-    display: flex;
-    justify-content: space-between;
-		align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .events-list__title {
-	  /* margin-right: 24px; */
-  margin-right: 8px;
-    font-size: 28px;
-    font-weight: 600;
+	/* margin-right: 24px; */
+	margin-right: 8px;
+	font-size: 28px;
+	font-weight: 600;
 }
 .events-list__location-edit {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-    padding: 12px;
-    color: rgb(0, 121, 138, 1);
-    border-radius: 8px;
-    background: rgba(151, 202, 209, 0.12);
-    font-size: 20px;
-    font-weight: 600;
-    margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 240px;
+	padding: 12px;
+	color: rgb(0, 121, 138, 1);
+	border-radius: 8px;
+	background: rgba(151, 202, 209, 0.12);
+	font-size: 20px;
+	font-weight: 600;
+	margin-right: auto;
 }
 .events-list__location-edit-icon {
-    width: 15px;
-    height: 16px;
+	width: 15px;
+	height: 16px;
 }
 .events-list__all-events {
-    font-size: 16px;
-    font-weight: 500;
-    color: rgb(0, 121, 138, 1);
+	font-size: 16px;
+	font-weight: 500;
+	color: rgb(0, 121, 138, 1);
 }
 
-	/*дивы с описанием событий */
+/*дивы с описанием событий */
 .events-list__items {
-    display: flex;
-    justify-content: space-between;
-		flex-wrap: wrap;
-    /* gap: 86px 0px;или */
-		/* gap: 36px 36px; */
-    margin-top: 28px;
-
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/* gap: 86px 0px;или */
+	/* gap: 36px 36px; */
+	margin-top: 28px;
 }
 .events-list__item {
- margin-top: 28px;
- /* добавлено */
-  /* height: 400px;и тогда содержимое дива уходит за рамки main */
+	margin-top: 28px;
+	/* добавлено */
+	/* height: 400px;и тогда содержимое дива уходит за рамки main */
 }
 .events-list__item-image {
-    padding-top: 1px;
-    width: 272px;
-    height: 153px;
-    border-radius: 8px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+	padding-top: 1px;
+	width: 272px;
+	height: 153px;
+	border-radius: 8px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .events-list__item-image--1 {
-    background-image: url(../assets/img/png/block2_picture1.png);
+	background-image: url(../assets/img/png/block2_picture1.png);
 }
 .events-list__item-image--2 {
-    background-image: url(../assets/img/png/block2_picture2.png);
+	background-image: url(../assets/img/png/block2_picture2.png);
 }
 .events-list__item-image--3 {
-    background-image: url(../assets/img/png/block2_picture3.png);
+	background-image: url(../assets/img/png/block2_picture3.png);
 }
 .events-list__item-image--4 {
-    background-image: url(../assets/img/png/block2_picture4.png);
+	background-image: url(../assets/img/png/block2_picture4.png);
 }
 .events-list__item-image--5 {
-    background-image: url(../assets/img/png/block2_picture5.png);
+	background-image: url(../assets/img/png/block2_picture5.png);
 }
 .events-list__item-image--6 {
-    background-image: url(../assets/img/png/block2_picture6.png);
+	background-image: url(../assets/img/png/block2_picture6.png);
 }
 .events-list__item-image--7 {
-    background-image: url(../assets/img/png/block2_picture7.png);
+	background-image: url(../assets/img/png/block2_picture7.png);
 }
 .events-list__item-image--8 {
-    background-image: url(../assets/img/png/block2_picture8.png);
+	background-image: url(../assets/img/png/block2_picture8.png);
 }
 
 .events-list__item-details {
-    margin-top: 12px;
+	margin-top: 12px;
 }
 .events-list__item-title {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-		/* height есть + высота div даты, то все выходит за границы main */
-		height: 48px;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+	/* height есть + высота div даты, то все выходит за границы main */
+	height: 48px;
 }
 .events-list__item-date-info {
-
 }
-.events-list__item-theme{
+.events-list__item-theme {
 	/* ПОЧЕМУ большие отступы сверху и снизу */
-    margin: 24px 0px;
-    color: rgb(112, 112, 112, 1);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20;
-		/* если это есть + высота категории, то все выходит за границы main */
-		/* height: 40px; */
-		}
+	margin: 24px 0px;
+	color: rgb(112, 112, 112, 1);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20;
+	/* если это есть + высота категории, то все выходит за границы main */
+	/* height: 40px; */
+}
 
 .events-list__item-date {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: -0.35px;
-    text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: -0.35px;
+	text-transform: uppercase;
 }
 .events-list__item-date-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
 }
 .events-list__item-info {
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
 }
 .events-list__item-info-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 6px;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
 }
 .events-list__item-info-ticket-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 6px;
-    margin-left: 16px;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	margin-left: 16px;
 }
 
 /* SECTION 2 Events online */
 .online-events-list {
-    margin-top: 134px;
+	margin-top: 134px;
 }
 .online-events-list__header {
-    display: flex;
-    justify-content: space-between;
-		align-items: center;
-		
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .online-events-list__title {
-    margin-right: 24px;
-    font-size: 28px;
-    font-weight: 600;
+	margin-right: 24px;
+	font-size: 28px;
+	font-weight: 600;
 }
 .online-events-list__all-events {
-    font-size: 16px;
-    font-weight: 500;
-    color: rgb(0, 121, 138, 1);
+	font-size: 16px;
+	font-weight: 500;
+	color: rgb(0, 121, 138, 1);
 }
 
 .online-events-list__items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* gap: 86px 0px; или */
-		gap: 36px 0px;
-    margin-top: 24px;
-	}
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/* gap: 86px 0px; или */
+	gap: 36px 0px;
+	margin-top: 24px;
+}
 .online-events-list__item {
 }
 .online-events-list__item-image {
-    padding-top: 0.16px;
-    width: 272px;
-    height: 153px;
-    border-radius: 8px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+	padding-top: 0.16px;
+	width: 272px;
+	height: 153px;
+	border-radius: 8px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .online-events-list__item-image--1 {
-    background-image: url(../assets/img/png/block2_picture9.png);
+	background-image: url(../assets/img/png/block2_picture9.png);
 }
 .online-events-list__item-image--2 {
-    background-image: url(../assets/img/png/block2_picture10.png);
+	background-image: url(../assets/img/png/block2_picture10.png);
 }
 .online-events-list__item-image--3 {
-    background-image: url(../assets/img/png/block2_picture11.png);
+	background-image: url(../assets/img/png/block2_picture11.png);
 }
 .online-events-list__item-image--4 {
-    background-image: url(../assets/img/png/block2_picture12.png);
+	background-image: url(../assets/img/png/block2_picture12.png);
 }
 
 .online-events-list__item-details {
-    margin-top: 12px;
+	margin-top: 12px;
 }
 .online-events-list__item-title {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
 }
 .online-events-list__item-date-info {
 }
 .online-events-list__item-theme {
-    margin: 24px 0;
-    color: rgb(112, 112, 112, 1);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
+	margin: 24px 0;
+	color: rgb(112, 112, 112, 1);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
 }
 .online-events-list__item-date {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: -0.35px;
-    text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: -0.35px;
+	text-transform: uppercase;
 }
 .online-events-list__item-date-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
 }
 .online-events-list__item-info {
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
 }
 .online-events-list__item-info-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 6px;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
 }
 .online-events-list__item-info-ticket-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 6px;
-    margin-left: 16px;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	margin-left: 16px;
 }
 
+/* SECTION 3 with button Sign Up */
+.join-meetup__container {
+	margin-top: 92px;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 8px;
+	background-color: rgba(151, 202, 209, 0.08);
+	padding: 36px 56px;
+}
+.join-meetup__content {
+}
+.join-meetup__title {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 36px;
+}
+.join-meetup__description {
+	margin-top: 24px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.join-meetup__action {
+	margin-top: 24px;
+	color: #fff;
+	padding: 8px 66px;
+	border-radius: 8px;
+	background-color: rgb(227, 35, 89, 1);
+	font-size: 16px;
+	font-weight: 500;
+}
+.join-meetup__visual {
+}
+.join-meetup__image {
+	width: 341px;
+	height: 196px;
+}
 
+/*SECTION 4  Categories */
+.top-categories {
+	margin-top: 64px;
+}
+.top-categories__title {
+	font-size: 28;
+	font-weight: 600;
+	line-height: 36px;
+}
+.top-categories__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 24px;
+}
+.top-categories__item {
+	min-width: 135px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 8px;
+	background-color: rgba(151, 202, 209, 0.08);
+	padding: 22px 28px;
+}
+.top-categories__item-icon {
+	width: 20px;
+	height: 20px;
+}
+.top-categories__item-text {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	margin-top: 8px;
+}
 
+/* SECTION 5  Cities */
+.popular-cities {
+	margin-top: 46px;
+}
+.popular-cities__title {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 36px;
+}
+.popular-cities__description {
+	color: rgb(112, 112, 112, 1);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 16px;
+}
+.popular-cities__list {
+	margin-top: 28px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.popular-cities__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.popular-cities__image {
+	width: 205px;
+	height: 205px;
+	border-radius: 50%;
+}
+.popular-cities__city-name {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 28px;
+	margin-top: 24px;
+}
+
+/* SECTION 6  How-meetup-works*/
+.how-meetup-works {
+	margin-top: 64px;
+}
+.how-meetup-works__title {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 36px;
+}
+.how-meetup-works__content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 24px;
+}
+.how-meetup-works__card {
+	width: 49%;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto auto auto;
+	border-radius: 8px;
+	background-color: rgba(151, 202, 209, 0.08);
+	padding: 32px 0px 24px 24px;
+}
+.how-meetup-works__icon {
+	width: 40px;
+	height: 40px;
+	grid-column: 1;
+	grid-row: 1 / span 3;
+	margin-right: 24px;
+}
+.how-meetup-works__card-title {
+	grid-column: 2;
+	grid-row: 1;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+}
+.how-meetup-works__card-description {
+	grid-column: 2;
+	grid-row: 2;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 16px;
+}
+.how-meetup-works__card-link {
+	grid-column: 2;
+	grid-row: 3;
+	color: rgb(0, 121, 138);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	margin-top: 16px;
+}
+
+/* SECTION 7  Friendships-meetup */
+.friendships-meetup {
+	margin-top: 64px;
+}
+.friendships-meetup__title {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 36px;
+}
+.friendships-meetup__description {
+	color: rgb(112, 112, 112, 1);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 16px;
+}
+.friendships-meetup__articles {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 28px;
+}
+.friendships-meetup__article {
+}
+.friendships-meetup__article-image {
+	width: 376px;
+	height: 192px;
+}
+.friendships-meetup__article-title {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 28px;
+	margin-top: 24px;
+}
+.friendships-meetup__article-text {
+	color: rgb(112, 112, 112, 1);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 12px;
+}
+.friendships-meetup__article-link {
+	color: rgb(0, 121, 138, 1);
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 16px;
+}
 
 /* FOOTER */
-footer {
-	max-width: 1512px;
-	width: 100%;
-	height: 560px;
+.footer {
+	max-width: 100%;
+	margin-top: 54px;
+	color: rgba(246, 247, 248, 1);
+	background-color: rgb(33, 33, 33, 1);
+	padding-top: 10px;
+}
+.footer__top {
+	max-width: 1196px;
+	margin: 0 auto;
+	margin-top: 32px;
+	padding: 20px 48px;
 }
 
-@media (min-width: 390px) {
+.footer__top hr {
+	border: none;
+	background-color: rgb(112, 112, 112, 1);
+	height: 1px;
+	margin-top: 20px;
+}
+.footer__create-group {
+	display: flex;
+	align-items: center;
+}
+.footer__title {
+	color: rgb(246, 247, 248, 1);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 1px;
+	margin-right: 48px;
+}
+.footer__get-started {
+	border: 2px solid rgb(255, 255, 255, 1);
+	border-radius: 6px;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 1);
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 1px;
+	padding: 10px 15px;
+}
+.footer__middle {
+	max-width: 1196px;
+	margin: 0 auto;
+	padding: 0px 48px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer__column {
+	width: 33%;
+}
+.footer__column h3 {
+	color: rgb(246, 247, 248, 1);
+	font-size: 16px;
+	font-weight: 400;
+}
+.footer__column ul li {
+	margin-top: 8px;
+}
+.footer__column ul li a {
+	color: rgb(197, 196, 196, 1);
+	font-size: 14px;
+	font-weight: 400;
+}
+.footer__bottom {
+	max-width: 1196px;
+	margin: 0 auto;
+	margin-top: 42px;
+	padding: 30px 48px;
+	display: flex;
+	align-items: end;
+	flex-wrap: wrap;
+}
+.footer__social {
+	margin-right: auto;
+}
+.footer__social > p {
+	padding-bottom: 10px;
+	color: rgb(246, 247, 248, 1);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.footer__social > a {
+	margin-right: 38px;
+}
+
+.footer__social a img {
+	width: 26px;
+	height: 26px;
+}
+.footer__app-stores {
+	margin-left: auto;
+}
+.footer__app-stores > a {
+	width: 140px;
+	height: 40px;
+	margin-left: 24px;
+}
+.footer__copyright {
+	flex-basis: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	align-items: center;
+	margin-top: 60px;
+}
+
+.footer__copyright > p {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.footer__copyright-links {
+	display: flex;
+	gap: 20px;
+	padding-left: 20px;
+}
+
+.footer__copyright > a {
+	color: rgb(197, 196, 196, 1);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+@media (max-width: 1024px) {
+	.nav__form {
+		visibility: hidden;
+	}
+	.footer__copyright-links {
+		display: none;
+	}
+}
+@media (max-width: 390px) {
 	.wrapper {
 		width: 100%;
 	}
@@ -517,14 +853,4 @@ footer {
 	header {
 		max-width: 100%;
 	}
-
-	.nav__form {
-		visibility: visible;
-	}
-
-	footer {
-		max-width: 100%;
-	}
-} */
-
-/* что происходит при размере меньше 390
+}
