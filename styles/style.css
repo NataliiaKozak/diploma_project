@@ -2,15 +2,11 @@
 @import url('./_reset.css');
 
 .wrapper {
-	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
 	overflow: clip;
-	width: 1512px;
+	max-width: 1512px;
 	margin: auto;
-	/*  убрать цвет дива */
-	border: 1px solid rgb(236, 15, 15);
 	background-color: rgba(255, 255, 255, 1);
 }
 
@@ -18,10 +14,8 @@
 	flex: 1;
 }
 
-/* ширина секций => названии секций */
 [class*='__container'] {
 	max-width: 1196px;
-	/* padding-inline: 40px; */
 	margin: 0 auto;
 }
 
@@ -63,13 +57,10 @@ header {
 
 /* форма с 2 инпутом и кнопка */
 .nav__form {
-	/* visibility: hidden; */
 	max-width: 592px;
 	width: 100%;
 	max-height: 42px;
-	/*  убрала цвет дива */
-	/* border: 1px solid #e61755; */
-	margin-left: 40px;
+	padding-left: 40px;
 	font-size: 16px;
 }
 /* див в форме */
@@ -82,17 +73,14 @@ header {
 	align-items: center;
 	font-size: 16px;
 	font-weight: 400;
-	/*  убрала цвет  */
-	/* border: 1px solid #aa69d6; */
 }
 
 .loop-input-container {
 	position: relative;
 	max-width: 300px;
 	width: 100%;
-	margin: 10 px auto;
-	border-radius: 8px 0px 0px 8px;
-	/*  поменяла цвет  */
+	margin: 10px auto;
+	border-radius: 8px 0 0 8px;
 	border: 1px solid rgba(217, 217, 217, 1);
 }
 
@@ -105,7 +93,6 @@ header {
 	max-width: 17px;
 	max-height: 18px;
 	pointer-events: none;
-	/* border: rgba(217, 217, 217, 1); */
 }
 
 .loop-container img {
@@ -117,9 +104,6 @@ header {
 .input-left {
 	width: 100%;
 	padding: 10px 15px 10px 40px;
-	/* border: 1px solid #72d669;
-	/*  убрать цвет  * */
-	/* border:  1px solid rgba(217, 217, 217, 1); */
 	height: 42px;
 }
 
@@ -129,24 +113,22 @@ header {
 	max-width: 254px;
 	width: 100%;
 	margin: 10px auto;
-	margin-left: 0px;
+	margin-left: 0;
 	border: 1px solid rgba(217, 217, 217, 1);
-	border-radius: 0px 8px 8px 0px;
+	border-radius: 0 8px 8px 0;
 }
 .input-right {
 	max-width: 100%;
 	width: 254px;
 	height: 42px;
 	color: rgba(0, 0, 0, 1);
-	/* border: 1px solid #69c9d6; */
-	/*  убрала цвет  */
 	padding-left: 17px;
 }
 .search-button {
 	max-width: 100%;
 	width: 42px;
 	height: 42px;
-	border-radius: 0px 8px 8px 0px;
+	border-radius: 0 8px 8px 0;
 	border: none;
 	background-color: rgba(246, 88, 88, 1);
 }
@@ -186,13 +168,7 @@ header {
 main {
 	max-width: 1196px;
 	width: 100%;
-	/* padding-inline: 40px; */
-	/* max-height: 3827px;
-height: 100%; */
 	margin: 0 auto;
-	border: 1px solid black;
-	/* убрать границу */
-	/* padding: 15px 0px; */
 }
 
 /* DIV with button Join Meetup */
@@ -203,9 +179,8 @@ height: 100%; */
 	display: flex;
 	justify-content: start;
 	gap: 54px;
+	flex-wrap: wrap;
 	min-height: 461px;
-	/* убрать границы */
-	border: 1px solid rgb(38, 12, 228);
 }
 
 .join__content {
@@ -234,7 +209,7 @@ height: 100%; */
 }
 .join__foto {
 	height: 461px;
-	border: 1px solid rgb(204, 64, 214);
+	
 }
 .image {
 	max-width: 379px;
@@ -244,8 +219,6 @@ height: 100%; */
 
 /* SECTION 1 Events near Mountain View, CA */
 .events__container {
-	margin-top: 126px;
-	border: 1ps solid rgb(70, 93, 95);
 }
 .events-list__header {
 	display: flex;
@@ -253,7 +226,6 @@ height: 100%; */
 	align-items: center;
 }
 .events-list__title {
-	/* margin-right: 24px; */
 	margin-right: 8px;
 	font-size: 28px;
 	font-weight: 600;
@@ -286,14 +258,11 @@ height: 100%; */
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	/* gap: 86px 0px;или */
-	/* gap: 36px 36px; */
 	margin-top: 28px;
 }
 .events-list__item {
 	margin-top: 28px;
-	/* добавлено */
-	/* height: 400px;и тогда содержимое дива уходит за рамки main */
+	margin-bottom: 70px;
 }
 .events-list__item-image {
 	padding-top: 1px;
@@ -336,20 +305,16 @@ height: 100%; */
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 24px;
-	/* height есть + высота div даты, то все выходит за границы main */
 	height: 48px;
 }
 .events-list__item-date-info {
 }
 .events-list__item-theme {
-	/* ПОЧЕМУ большие отступы сверху и снизу */
-	margin: 24px 0px;
+	margin: 20px 0;
 	color: rgb(112, 112, 112, 1);
 	font-size: 14px;
 	font-weight: 500;
-	line-height: 20;
-	/* если это есть + высота категории, то все выходит за границы main */
-	/* height: 40px; */
+	padding-top: 15px;
 }
 
 .events-list__item-date {
@@ -388,7 +353,7 @@ height: 100%; */
 
 /* SECTION 2 Events online */
 .online-events-list {
-	margin-top: 134px;
+	margin-top: 50px;
 }
 .online-events-list__header {
 	display: flex;
@@ -410,8 +375,7 @@ height: 100%; */
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	/* gap: 86px 0px; или */
-	gap: 36px 0px;
+	gap: 36px 0;
 	margin-top: 24px;
 }
 .online-events-list__item {
@@ -494,6 +458,7 @@ height: 100%; */
 	margin-top: 92px;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	border-radius: 8px;
 	background-color: rgba(151, 202, 209, 0.08);
 	padding: 36px 56px;
@@ -532,7 +497,7 @@ height: 100%; */
 	margin-top: 64px;
 }
 .top-categories__title {
-	font-size: 28;
+	font-size: 28px;
 	font-weight: 600;
 	line-height: 36px;
 }
@@ -614,6 +579,7 @@ height: 100%; */
 .how-meetup-works__content {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-top: 24px;
 }
 .how-meetup-works__card {
@@ -623,7 +589,7 @@ height: 100%; */
 	grid-template-rows: auto auto auto;
 	border-radius: 8px;
 	background-color: rgba(151, 202, 209, 0.08);
-	padding: 32px 0px 24px 24px;
+	padding: 32px 0 24px 24px;
 }
 .how-meetup-works__icon {
 	width: 40px;
@@ -676,6 +642,7 @@ height: 100%; */
 .friendships-meetup__articles {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-top: 28px;
 }
 .friendships-meetup__article {
@@ -750,7 +717,7 @@ height: 100%; */
 .footer__middle {
 	max-width: 1196px;
 	margin: 0 auto;
-	padding: 0px 48px;
+	padding: 0 48px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -843,12 +810,9 @@ height: 100%; */
 @media (max-width: 390px) {
 	.wrapper {
 		width: 100%;
+		display: flex;
+		align-items: center;
 	}
-	/* [class*='__container'] {
-		max-width: 364px;
-		padding-inline: 20px;
-		margin: 0 auto;
-	} */
 
 	header {
 		max-width: 100%;

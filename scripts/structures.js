@@ -65,3 +65,22 @@ const eventsStore = [
 		distance: 15,
 	},
 ]
+
+// Массив выбранных значений.
+const selectedFilters = [
+	{
+		elementId: 'select-b-type',
+		selectedValue: '',
+		filter: 'type',
+	},
+	{
+		elementId: 'select-b-distance',
+		selectedValue: '',
+		filter: 'distance',
+	},
+	{
+		elementId: 'select-b-category',
+		selectedValue: '',
+		filter: 'category',
+	},
+]
